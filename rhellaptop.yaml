@@ -3,7 +3,7 @@
   hosts: rhel
   gather_facts: True
   become: true
-  vars_files: 
-    - vault.yaml
+#  vars_files: 
+#    - vault.yaml
   roles:
     - configure
