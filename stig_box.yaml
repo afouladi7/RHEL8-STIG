@@ -1,6 +1,6 @@
 ---
 - name: STIG RHEL8 Box
-  hosts: hosts: "{{ _hosts | default(omit) }}"
+  hosts: "{{ _hosts | default(omit) }}"
   gather_facts: True
   become: true
   roles:
