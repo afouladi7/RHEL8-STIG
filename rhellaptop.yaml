@@ -1,6 +1,6 @@
 ---
 - name: Create a sandbox instance
-  hosts: rhel
+  hosts: "{{ _hosts | default(omit) }}"
   gather_facts: True
   become: true
 #  vars_files: 
